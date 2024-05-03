@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Green & White Color Scheme -->
+    <color name="light_green">#90EE91</color>
+    <color name="cultured">#F5F5F5</color>
+    <color name="nyanza">#E5F6DF</color>
+    <color name="tea_green">#CAEEC2</color>
+
+    <!-- Primary and secondary colors -->
+    <color name="primaryColor">#90EE91</color>
+    <color name="primaryLightColor">#CAEEC2</color>
+    <color name="secondaryColor">#F5F5F5</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="textColorBlack">#000000</color>
+    <color name="textColorButtonSecondary">#000000</color>
+</resources>

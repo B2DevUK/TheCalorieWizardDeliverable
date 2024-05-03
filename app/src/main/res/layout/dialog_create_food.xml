@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Group 1: Food Name, Description, Portion Size, Calories -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/nyanza"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Food Name -->
+            <EditText
+                android:id="@+id/editTextFoodName"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/food_name"
+                android:inputType="text"
+                android:autofillHints="" />
+
+            <!-- Description -->
+            <EditText
+                android:id="@+id/editTextDescription"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:autofillHints="" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <!-- Portion Size Value Input -->
+                <EditText
+                    android:id="@+id/editTextPortionSizeValue"
+                    style="@style/CustomEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/portion_size_value"
+                    android:inputType="numberDecimal"
+                    android:autofillHints="" />
+
+                <Spinner
+                    android:id="@+id/spinnerPortionUnit"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <!-- Calories -->
+            <EditText
+                android:id="@+id/editTextCalories"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/calories"
+                android:inputType="number"
+                android:autofillHints="" />
+
+        </LinearLayout>
+
+        <!-- Group 2: Carbs, Fats, Proteins -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/light_green"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Carbs -->
+            <EditText
+                android:id="@+id/editTextCarbs"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/carbs_g"
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
+
+            <!-- Fats -->
+            <EditText
+                android:id="@+id/editTextFats"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fats_g"
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
+
+            <!-- Proteins -->
+            <EditText
+                android:id="@+id/editTextProteins"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/proteins_g"
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
+
+        </LinearLayout>
+
+        <!-- Group 3: Fibre & Sugar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/cultured"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Fibre -->
+            <EditText
+                android:id="@+id/editTextFibre"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fibre_g"
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
+
+            <!-- Sugar -->
+            <EditText
+                android:id="@+id/editTextSugar"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sugar_g"
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
+
+        </LinearLayout>
+
+        <!-- Group 4: Saturated Fat, Polyunsaturated Fat, Monounsaturated Fat -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/nyanza"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Saturated Fat -->
+            <EditText
+                android:id="@+id/editTextSaturatedFat"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/saturated_fat_g"
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
+
+            <!-- Polyunsaturated Fat -->
+            <EditText
+                android:id="@+id/editTextPolyunsaturatedFat"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/polyunsaturated_fat_g"
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
+
+            <!-- Monounsaturated Fat -->
+            <EditText
+                android:id="@+id/editTextMonounsaturatedFat"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/monounsaturated_fat_g"
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
+
+        </LinearLayout>
+
+        <!-- Group 5: Cholesterol, Sodium, Potassium -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/light_green"
+            android:padding="16dp">
+
+            <!-- Cholesterol -->
+            <EditText
+                android:id="@+id/editTextCholesterol"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cholesterol_mg"
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
+
+            <!-- Sodium -->
+            <EditText
+                android:id="@+id/editTextSodium"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sodium_mg"
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
+
+            <!-- Potassium -->
+            <EditText
+                android:id="@+id/editTextPotassium"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/potassium_mg"
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Thecaloriewizard.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/secondaryColor</item>
+        <item name="android:textColor">@color/textColorButtonSecondary</item>
+        <item name="rippleColor">@color/primaryLightColor</item>
+        <item name="android:fontFamily">@font/advent_pro_bold</item>
+    </style>
+
+    <style name="Widget.Thecaloriewizard.Button.Secondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/secondaryColor</item>
+        <item name="android:textColor">@color/textColorButtonSecondary</item>
+        <item name="rippleColor">@color/tea_green</item>
+        <item name="android:fontFamily">@font/advent_pro_bold</item>
+    </style>
+
+    <!-- Custom Toolbar Style -->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="titleTextAppearance">@style/ToolbarTitleText</item>
+        <item name="android:fontFamily">@font/advent_pro_bold</item>
+    </style>
+
+    <!-- Custom Text Appearance for the Toolbar Title -->
+    <style name="ToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/advent_pro_bold</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="CustomEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColor">@color/textColorBlack</item>
+        <item name="android:fontFamily">@font/advent_pro_bold</item>
+        <item name="colorControlActivated">@color/primaryColor</item>
+        <item name="colorControlNormal">@color/secondaryColor</item>
+        <item name="boxStrokeColor">@color/tea_green</item>
+        <item name="boxStrokeWidth">4dp</item>
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+
+</resources>

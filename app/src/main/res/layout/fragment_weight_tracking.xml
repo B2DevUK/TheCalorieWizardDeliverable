@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:outlineProvider="bounds"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:elevation="2dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weight_tracking"
+        android:textStyle="bold"
+        android:textColor="@color/textColorBlack"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/advent_pro_bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/current_weight"
+        android:textColor="@color/textColorBlack"
+        android:textSize="16sp"
+        android:fontFamily="@font/advent_pro_bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewCurrentWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_150_lbs"
+        android:textColor="@color/primaryColor"
+        android:textSize="24sp"
+        android:fontFamily="@font/advent_pro_bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/goal_weight"
+        android:textColor="@color/textColorBlack"
+        android:textSize="16sp"
+        android:fontFamily="@font/advent_pro_bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewGoalWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_130_lbs"
+        android:textColor="@color/primaryColor"
+        android:textSize="24sp"
+        android:fontFamily="@font/advent_pro_bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remaining_loss_gain"
+        android:textColor="@color/textColorBlack"
+        android:textSize="16sp"
+        android:fontFamily="@font/advent_pro_bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewWeightRemaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_20_lbs"
+        android:textColor="@color/primaryColor"
+        android:textSize="24sp"
+        android:fontFamily="@font/advent_pro_bold"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editTextWeighIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_weigh_in"
+        android:textColor="@color/textColorBlack"
+        android:textSize="16sp"
+        android:fontFamily="@font/advent_pro_bold"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/buttonSubmitWeighIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textColor="@color/textColorButtonSecondary"
+        android:backgroundTint="@color/secondaryColor"
+        android:textSize="16sp"
+        android:fontFamily="@font/advent_pro_bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recent_weigh_ins"
+        android:textColor="@color/textColorBlack"
+        android:textSize="16sp"
+        android:fontFamily="@font/advent_pro_bold"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewRecentWeighIns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

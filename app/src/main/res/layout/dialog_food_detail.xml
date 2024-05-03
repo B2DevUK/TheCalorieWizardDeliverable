@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/nyanza"
+    android:elevation="4dp">
+
+    <!-- 1. Name, Description & Calories -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/tvDetailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_cultured"/>
+
+            <TextView
+                android:id="@+id/tvDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_nyanza"/>
+
+            <TextView
+                android:id="@+id/tvDetailCalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_cultured"/>        </LinearLayout>
+    </FrameLayout>
+
+    <!-- 2. Portion Size & Unit -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <EditText
+                android:id="@+id/tvDetailPortionSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_nyanza"
+                android:inputType="number"
+                android:singleLine="true"
+                android:labelFor="@id/tvDetailPortionSize"
+                android:autofillHints="" />
+
+            <TextView
+                android:id="@+id/tvDetailPortionUnit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_nyanza"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- 3. Carbs, Fats, Proteins -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/tvDetailCarbs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_cultured"/>
+
+            <TextView
+                android:id="@+id/tvDetailFats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_nyanza"/>
+
+            <TextView
+                android:id="@+id/tvDetailProteins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_cultured"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- 4. Saturated fat, Polyunsaturated fat, Monounsaturated fat -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/tvDetailSaturatedfat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_cultured"/>
+
+            <TextView
+                android:id="@+id/tvDetailPolyunsaturatedfat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_nyanza"/>
+
+            <TextView
+                android:id="@+id/tvDetailMonounsaturatedfat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_cultured"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- 5. Fibre & Sugar -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/tvDetailFibre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_nyanza"/>
+
+            <TextView
+                android:id="@+id/tvDetailSugar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_nyanza"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- 6. Cholesterol, Sodium, Potassium -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/tvDetailCholesterol"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_cultured"/>
+
+            <TextView
+                android:id="@+id/tvDetailSodium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_nyanza"/>
+
+            <TextView
+                android:id="@+id/tvDetailPotassium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:background="@drawable/border_cultured"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

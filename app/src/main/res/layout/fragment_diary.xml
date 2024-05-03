@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nyanza"
+    tools:context=".main.foodDiary.DiaryFragment">
+
+    <!-- Nutrients Consumed Title Bar -->
+    <TextView
+        android:id="@+id/nutrientsConsumedTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/nutrients_consumed"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColorBlack"
+        android:fontFamily="@font/advent_pro_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Nutritional Summary Layout -->
+    <LinearLayout
+        android:id="@+id/nutritionalSummaryLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@id/nutrientsConsumedTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/custom_diary_background">
+
+        <TextView
+            android:id="@+id/textViewCalories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/advent_pro_bold"
+            android:text="@string/calories_n1200kcal"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textViewCarbs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/advent_pro_bold"
+            android:text="@string/carbs_n110g"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textViewFats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/advent_pro_bold"
+            android:text="@string/fats_n68g"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textViewProteins"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/advent_pro_bold"
+            android:text="@string/proteins_n110g"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <!-- Diary RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/diaryRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/advent_pro_bold"
+        app:layout_constraintTop_toBottomOf="@id/nutritionalSummaryLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/cultured"
+        android:layout_marginBottom="?attr/actionBarSize"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

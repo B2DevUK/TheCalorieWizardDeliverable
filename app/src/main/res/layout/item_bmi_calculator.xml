@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:outlineProvider="bounds"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:elevation="2dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi_calculator"
+        android:textStyle="bold"
+        android:textColor="@color/textColorBlack"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/advent_pro_bold"/>
+
+    <TextView
+        android:id="@+id/textViewBMIValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_25_0"
+        android:textColor="@color/primaryColor"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/advent_pro_bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewBMIWeightClassification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/overweight"
+        android:textColor="@color/textColorBlack"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/advent_pro_bold"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi_categories"
+        android:textColor="@color/textColorBlack"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/advent_pro_bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/underweight_lt_18_5"
+        android:textColor="@color/textColorBlack"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/advent_pro_bold"
+        android:background="@color/nyanza"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/normal_weight_18_5_24_9"
+        android:textColor="@color/textColorBlack"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/advent_pro_bold"
+        android:background="@color/tea_green"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/overweight_25_29_9"
+        android:textColor="@color/textColorBlack"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/advent_pro_bold"
+        android:background="@color/primaryColor"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/obesity_lt_30"
+        android:textColor="@color/textColorBlack"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/advent_pro_bold"
+        android:background="@color/tea_green"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
