@@ -13,7 +13,7 @@ import com.example.thecaloriewizard.main.HomeActivity
  * Description: Landing page activity for handling user authentication and navigation.
  *
  * [Author]
- * Author Name: (Your Name)
+ * Author Name: Brandon Sharp
  *
  * [Parameters/Arguments]
  * None
